@@ -1,0 +1,6 @@
+const LOGIN_ROUTE = '/login'
+const ADMIN_ROUTE = '/admin'
+const REGISTRATION_ROUTE = '/registration'
+const SHOP_ROUTE = '/shop'
+const BASKET_ROUTE = '/basket'
+const DEVICE_ROUTE = '/device'

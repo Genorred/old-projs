@@ -1,0 +1,10 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    padding: 0;
+}
+
+.navbarLinks {
+    margin-inline: 10px;
+}

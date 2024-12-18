@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="0.css" />
+    <style>
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="xd">
+        <div class="hos-ebalo">
+          <img id="image" src="/images/hos1.gif" onclick="fnForImg()" />
+          <script>
+            let a = 0;
+            let image = document.getElementById("image");
+            const fnForImg = () => {
+              let images = new Array("/images/hos1.gif", "/images/hos2.gif");
+              a++;
+              if (a === 2) {
+                a = 0;
+              }
+              image.src = images[a];
+            };
+          </script>
+        </div>
+        <a href="https://zippy-macaron-05e682.netlify.app/">
+          <h1>ПОШЁЛ НАХУЙ</h1>
+        </a>
+        <img id="Minmaxer" src="" />
+        <script>
+          const generateNumer = () => {
+            return  Math.floor(Math.random() * 2);
+          };
+          randomNumber=generateNumer()
+          const arrayOfImages = ['/images/min0.jpg', '/images/min1.jpg']
+          const arrayOfImagesNames = ['gentleMaxer', 'gigaMaxer']
+          document.getElementById("Minmaxer").src=arrayOfImages[randomNumber]
+          document.getElementById("Minmaxer").id=arrayOfImagesNames[randomNumber]
+          </script>
+      </div>
+      <div class="text">
+        <div class="list">
+          <ol>
+            <li>КАМЕННОЕ ДОЛБАЁБИЩЕ</li>
+            <li>УБЛЮДИЩЕ</li>
+            <li>ПИДАРАСИНА</li>
+            <li>МРПЗОТИЩЕ</li>
+            <li>ВЫБЛЯДОК</li>
+            <li>XD</li>
+            <li>XD</li>
+          </ol>
+      </div>
+    </div>
+  </body>
+</html>

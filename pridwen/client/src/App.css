@@ -1,0 +1,12 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+nav{
+  background-color: #363636;
+  padding-block: 1rem;
+}
+nav a{
+  margin-left: 1rem;
+  color: #eae9e9;
+}

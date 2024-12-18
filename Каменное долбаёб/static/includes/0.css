@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.hos-ebalo {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.hos-ebalo>img {
+    width: 100px;
+    height: 100px;
+    margin-top: 7px;
+    margin-left: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1.5px;
+}
+
+.xd>a>h1 {
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    width: 60%;
+    color: black;
+}
+
+#gigaMaxer {
+    float: right;
+    width: 5%;
+    max-width: 120px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#gentleMaxer {
+    float: right;
+    width: 5%;
+    max-width: 80px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.xd {
+    background-color: rgb(255, 240, 240);
+    display: block;
+    width: 100%;
+}
+
+.list {
+    padding: 1em;
+    float: left;
+    height: 600px;
+    width: 150px;
+    background-color: antiquewhite;
+    border-style: solid;
+    border-color: aqua;
+    border-width: 3px;
+}
+
+.list>ol>li {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    margin: 10px;
+    margin-top: 40px;
+    list-style: none;
+}
+

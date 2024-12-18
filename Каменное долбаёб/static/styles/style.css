@@ -1,0 +1,183 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+height: 2000px;
+}
+
+.hosEbalo>img {
+  position: absolute;
+  width: 18%;
+  max-width: 100px;
+  max-height: 100px;
+  margin-top: 7px;
+  margin-left: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1.5px;
+}
+
+.xd>a>h1 {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+}
+
+#gigaMaxer {
+  width: 90%;
+  margin-top: 14px;
+  max-width: 110px;
+  max-width: 83px;
+}
+
+#gentleMaxer {
+  width: 80%;
+  max-width: 80px;
+  margin-top: 10px;
+  max-width: 60px;
+}
+
+.imgThatChangesColor {
+  cursor: pointer;
+  width: 12%;
+  height: 10%;
+  position: absolute;
+  right: 10px;
+}
+
+.imgThatChangesColor>p {
+  font-size: small;
+}
+
+.clickImg {
+  position: relative;
+  width: 20%;
+  max-width: 18px;
+}
+
+.xd {
+  background-color: rgb(150, 148, 255);
+  position: relative;
+  right: 0px;
+  left: 0px;
+  border-style: solid;
+  border-width: 0px;
+  border-bottom-width: 2px;
+}
+
+.list {
+  padding: 1em;
+  float: left;
+  width: 20%;
+  max-height: 500px;
+  max-width: 150px;
+  min-width: 120px;
+  background-color: rgb(34, 16, 168);
+  border-color: rgb(9, 1, 1);
+  border-style: solid;
+  border-width: 2px;
+  border-left-width: 0px;
+  border-top-width: 0px;
+}
+
+.listForPhones {
+  display: none;
+}
+
+
+.list>ol>li,
+.list>ol>a>li {
+  font-size: 1em;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  padding-inline: 10px;
+  margin-top: 40px;
+  list-style: none;
+}
+
+.text>img {
+  float: right;
+  width: 30%;
+}
+
+@media (max-width: 440px) {
+  .hosEbalo {
+    position: fixed;
+    right: 10px;
+    margin: 0px;
+    top: 7px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .hosEbalo:hover .rightPanel {
+    top: 0px;
+    right: 0px;
+    position: fixed;
+    width: 150px;
+    height: 800px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 8px black;
+  }
+
+  .hosEbalo:hover .rightPanel .listForPhones {
+    position: fixed;
+    display: block;
+    right: 10px;
+    width: 105px;
+    top: 60px;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .imgThatChangesColor {
+    position: absolute;
+    right: 0px;
+    left: 10px;
+  }
+
+  .hosEbalo>img {
+    position: fixed;
+    z-index: 1;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    top: 7px;
+  }
+}
+
+.timer {
+  height: 50%;
+  margin-top: 20%;
+}
+
+.timer>h2,
+.timer>.timerOfNumbers {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+
+}
+
+.timer>.timerOfNumbers>span {
+  margin: 10px
+}
+
+.blackGround {
+  background-color: black;
+}
+
+.white {
+  color: white;
+}
+
+#h1.white {
+  color: white;
+}

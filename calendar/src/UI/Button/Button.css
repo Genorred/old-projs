@@ -1,0 +1,7 @@
+.button{
+    height: 2rem;
+    min-width: 3rem;
+    border: 1px solid;
+    border-radius: 0.5px;
+    background-color: aliceblue;
+}

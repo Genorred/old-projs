@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <script>
+      const Blade = {
+        lvl: 1,
+        baseKritDamage: 50,
+        baseCritChance: 5,
+        baseSpeed: 6.9,
+        baseDef: 69,
+        baseHp: 169,
+        baseAtk: 69,
+        type: "ТРАХАТЬ",
+        color: "green",
+        name: "Бляди",
+        scale: {
+          normalAttack: 169,
+          ability: 69.69,
+          ultimate: 696,
+        },
+        description: {
+          normalAttack: "делает бляди-блять, наносящий блять урон",
+          ability: "создаёт бляди-изолированную зону, которая наносит блять",
+          ultimate: "извергает древнюю силу блядей",
+        },
+      };
+      const Bladee = {
+        lvl: 1,
+        baseKritDamage: 60,
+        baseCritChance: 6,
+        baseSpeed: 6.9,
+        baseDef: 69,
+        baseHp: 169,
+        baseAtk: 69,
+        type: "ТРАХАТЬ",
+        color: "green",
+        name: "Бляди",
+        scale: {
+          normalAttack: 169,
+          ability: 69.69,
+          ultimate: 696,
+        },
+        description: {
+          normalAttack: "делает бляди-блять, наносящий блять урон",
+          ability: "создаёт бляди-изолированную зону, которая наносит блять",
+          ultimate: "извергает древнюю силу блядей",
+        },
+      };
+      const arrayOfChars = Array(Blade, Bladee);
+    </script>
+    <script>
+      let primogems = 0;
+      let money = 0;
+    </script>
+    <div class="container-menu" id="container-menu">
+      <img id="phone" src="/images/phone.jpg" alt="" />
+      <script>
+        document
+          .getElementById("container-menu")
+          .addEventListener("mouseover", (e) => {
+            document.getElementById("phone").src = "/images/2phone.jpg";
+          });
+        document
+          .getElementById("container-menu")
+          .addEventListener("mouseout", (e) => {
+            document.getElementById("phone").src = "/images/phone.jpg";
+          });
+      </script>
+      <div class="menu">
+        <div class="opt"></div>
+        <div class="opt"></div>
+        <div class="opt"></div>
+        <div class="opt"></div>
+        <div class="opt"></div>
+        <div class="opt"></div>
+        <div class="opt"></div>
+        <div class="opt"></div>
+        <div class="opt"></div>
+        <div class="opt"></div>
+      </div>
+    </div>
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li><img id="art-btn" src="/images/art.png" alt="" /></li>
+          <li><img id="book-btn" src="/images/book.png" alt="" /></li>
+          <li>
+            <img
+              id="bag-btn"
+              src="/images/bag.png"
+              alt=""
+              onclick="fnForOpeningSections('bag')"
+            />
+          </li>
+          <li><img id="3klee-btn" src="/images/3klee.png" alt="" /></li>
+          <li>
+            <img
+              id="kleeBtn"
+              src="/images/klee.jpg"
+              alt=""
+              onclick="fnForOpeningSections('char')"
+            />
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bag" id="bag">
+      <button onclick="closeSection()">X</button>
+      <div class="resourses">
+        <div class="money">000</div>
+        <div class="primogems">000</div>
+      </div>
+      <div class="logo">
+        <img src="/images/bag.png" alt="" />
+        <div>
+          <p class="inv">Инвентарь</p>
+          <p class="bag-name">Световые конусы</p>
+        </div>
+      </div>
+      <div class="inventar">
+        <div class="left-bar">
+          <p>a</p>
+          <p>b</p>
+          <p>c</p>
+          <p>d</p>
+          <p>d</p>
+          <p>d</p>
+          <p>d</p>
+          <p>d</p>
+          <p>d</p>
+          <p>d</p>
+        </div>
+        <div class="descriptions">
+          <p>yjg</p>
+        </div>
+        <div class="things">
+          <p>sfds</p>
+          <p>sfdsf</p>
+          <p>fsf</p>
+          <p>sfsf</p>
+          <p>sfdsf</p>
+          <p>sfsf</p>
+          <p>fsfsf</p>
+          <p>sfsf</p>
+          <p>afwaf</p>
+          <p>fwaf</p>
+        </div>
+      </div>
+    </div>
+    <div class="char" id="char">
+      <button onclick="closeSection()">X</button>
+      <div class="logo">
+        <img src="/images/klee.jpg" alt="" />
+        <div>
+          <p class="inv">Описание персонажа</p>
+          <p class="bag-name">Трахать/Кокоми</p>
+        </div>
+      </div>
+      <div class="container-Information">
+        <div class="left-bar">
+          <p id="char0" onclick="findingSelectedChar('0')"></p>
+          <p id="char1" onclick='findingSelectedChar("1")'></p>
+          <p id="char2" onclick='findingSelectedChar("2")'></p>
+          <p id="char3" onclick='findingSelectedChar("3")'></p>
+          <p id="char4" onclick='findingSelectedChar("4")'></p>
+          <p id="char5" onclick='findingSelectedChar("5")'></p>
+          <p id="char6" onclick='findingSelectedChar("6")'></p>
+          <p id="char7" onclick='findingSelectedChar("7")'></p>
+          <p id="char8" onclick='findingSelectedChar("8")'></p>
+          <p id="char9" onclick='findingSelectedChar("9")'></p>
+        </div>
+        <div class="opt-of-char">
+          <p>Подробнее</p>
+          <p>Световой анус</p>
+          <p>Следы</p>
+          <p>Реликвии</p>
+          <p>Конгсты</p>
+        </div>
+        <div class="descriptions">
+          <div class="space">
+            <p id="nameDescription"></p>
+            <img src="" alt="">
+          </div>
+          <div class="space">
+            <div>
+              <img src="" alt="" />
+              <span id="typeDescription"></span>
+            </div>
+            <span>?</span>
+          </div>
+          <div>
+            <div>
+              <span></span>
+              <span id="lvlDescription">lvl 000 0</span>
+              <progress id="progress-indicator" max="80" value="null"></progress>  
+                        </div>
+                        <div class="moving-borders">
+              <span
+                class="moving-border"
+                id="moving-border-1"
+                onclick="makeIndexHigherThanAnother('moving-border-1', 'moving-border-2')"
+                >Характеристики</span
+              >
+              <span
+                class="moving-border"
+                id="moving-border-2"
+                onclick="makeIndexHigherThanAnother('moving-border-2', 'moving-border-1')"
+                >Способность</span
+              >
+              <script>
+                const makeIndexHigherThanAnother = (itsId, anotherId) => {
+                  document.getElementById(itsId).style.zIndex = 2;
+                  document.getElementById(itsId).style.backgroundColor = 'white';
+                  document.getElementById(itsId).style.color = 'black';
+                  document.getElementById(anotherId).style.zIndex = 1;
+                  document.getElementById(anotherId).style.backgroundColor = 'rgb(0, 0, 0, 0.3)';
+                  document.getElementById(anotherId).style.color = 'white';
+                };
+              </script>
+            </div>
+            
+            <div class="dropdown-characteristics">
+              <img src="" alt="" />
+              <div>
+                <p class="nameOfCharacteristic">ad</p>
+                <p class="valueOfCharacteristic">13313</p>
+              </div>
+              <div>
+                <p class="nameOfCharacteristic">ad</p>
+                <p class="valueOfCharacteristic">13313</p>
+              </div>
+              <div>
+                <p class="nameOfCharacteristic">ad</p>
+                <p class="valueOfCharacteristic">13313</p>
+              </div>
+              <div>
+                <p class="nameOfCharacteristic">ad</p>
+                <p class="valueOfCharacteristic">13313</p>
+              </div>
+              <div>
+                <p class="nameOfCharacteristic">ad</p>
+                <p class="valueOfCharacteristic">13313</p>
+              </div>
+              <div>
+                <p class="nameOfCharacteristic">ad</p>
+                <p class="valueOfCharacteristic">13313</p>
+              </div>
+              <div>
+                <p class="nameOfCharacteristic">ad</p>
+                <p class="valueOfCharacteristic">13313</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropleft-description">
+          xddd
+        </div>
+      </div>
+      <script>
+        const arrayOfnamesOfCharacteristic = document.getElementsByClassName(
+          "nameOfCharacteristic"
+        );
+        const arrayOfvaluesOfCharacteristic = document.getElementsByClassName(
+          "valueOfCharacteristic"
+        );
+        const findingSelectedChar = (id) => {
+          document.getElementById("nameDescription").textContent =
+            arrayOfChars[id].name;
+          document.getElementById("typeDescription").textContent =
+            arrayOfChars[id].type;
+          document.getElementById("lvlDescription").textContent = `${'lvl'} ${arrayOfChars[id].lvl}${'/80'}`;
+            document.getElementById("progress-indicator").value =
+            arrayOfChars[id].lvl;
+          for (let i = 0; i < 6; i++) {
+            arrayOfnamesOfCharacteristic[i].textContent = Object.keys(
+              arrayOfChars[id]
+            )[i];
+            arrayOfvaluesOfCharacteristic[i].textContent = Object.values(
+              arrayOfChars[id]
+            )[i];
+          }
+        };
+        findingSelectedChar('0')
+        document.getElementById("char0").textContent = arrayOfChars[0].name;
+        document.getElementById("char1").textContent = arrayOfChars[1].name;
+        document.getElementById("char2").textContent = arrayOfChars[2].name;
+        document.getElementById("char3").textContent = arrayOfChars[3].name;
+        document.getElementById("char4").textContent = arrayOfChars[4].name;
+        document.getElementById("char5").textContent = arrayOfChars[5].name;
+        document.getElementById("char6").textContent = arrayOfChars[6].name;
+        document.getElementById("char7").textContent = arrayOfChars[7].name;
+        document.getElementById("char8").textContent = arrayOfChars[8].name;
+        document.getElementById("char9").textContent = arrayOfChars[9].name;
+      </script>
+    </div>
+    <script>
+      const bag = document.getElementById("bag");
+      const char = document.getElementById("char");
+      let lastOpenedSection;
+      const fnForOpeningSections = (idSection) => {
+        document.getElementById(idSection).style.display = "block";
+        lastOpenedSection = idSection;
+      };
+      const closeSection = () => {
+        if (lastOpenedSection) {
+          document.getElementById(lastOpenedSection).style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

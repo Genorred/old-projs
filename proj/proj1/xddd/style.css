@@ -1,0 +1,14 @@
+
+.container {
+    margin: 20px;
+    margin-top: 50px;
+    display: inline-block;
+    background-color: aquamarine;
+    text-align: center;
+}
+.main {
+    text-align: center;
+}
+.container>img {
+    max-width: 300px;
+}

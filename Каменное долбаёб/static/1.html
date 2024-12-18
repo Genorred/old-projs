@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="xd" id="xd">
+        <div class="hosEbalo">
+          <img id="image" src="./images/hos1.gif" onclick="fnForImg()" />
+          <script>
+            let a = 0;
+            let image = document.getElementById("image");
+            const fnForImg = () => {
+              let images = new Array("./images/hos1.gif", "./images/hos2.gif");
+              a++;
+              if (a === 2) {
+                a = 0;
+              }
+              image.src = images[a];
+            };
+          </script>
+          <div class="rightPanel" id="rightPanel">
+            <div class="listForPhones">
+              <ol>
+                <a href="./1.html">
+                  <li class="navOption">КАМЕННОЕ ДОЛБАЁБИЩЕ</li>
+                </a>
+                <a href="./2.html">
+                  <li class="navOption">ГероSkope</li>
+                </a>
+                <a href="./1.html">
+                  <li class="navOption">XD</li>
+                </a>
+                <a href="./1.html">
+                  <li class="navOption">XD</li>
+                </a>
+                <a href="./1.html">
+                  <li class="navOption">XD</li>
+                </a>
+                <a href="./1.html">
+                  <li class="navOption">XD</li>
+                </a>
+                <a href="./1.html">
+                  <li class="navOption">XD</li>
+                </a>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="imgThatChangesColor" id="imgThatChangesColor">
+          <img id="Minmaxer" src="" />
+          <p>чекнуть мать</p> <img class="clickImg" src="/images/free-icon-mouse-cursor-4584858.png" alt="">
+        </div>
+        <a href="./index.html">
+          <h1 id="h1">ПОШЁЛ НАХУЙ</h1>
+        </a>
+        <script>
+          const generateNumer = () => {
+            return Math.floor(Math.random() * 2);
+          };
+          randomNumber = generateNumer();
+          const arrayOfImages = ["./images/min0.jpg", "./images/min1.jpg"];
+          const arrayOfImagesNames = ["gentleMaxer", "gigaMaxer"];
+          document.getElementById("Minmaxer").src = arrayOfImages[randomNumber];
+          document.getElementById("Minmaxer").id =
+            arrayOfImagesNames[randomNumber];
+        </script>
+        <script>
+          const navOptions = document.getElementsByClassName("navOption")
+          
+          const appointer = () => {
+            if (!localStorage.getItem('motherWasChecked')) {
+              document
+              .getElementById("imgThatChangesColor")
+              .onclick=() => {
+                document.body.style.backgroundColor = "rgb(218, 221, 221)";
+                document.getElementById("xd").classList.add('blackGround')
+                  document.body.classList.add("white");
+                  document.getElementById("list").classList.add('blackGround')
+                  document.getElementById("rightPanel").classList.add('blackGround')
+                  document.querySelector("h1").classList.add('white')
+                  for (let i = 0; i < navOptions.length; i++) {
+                    navOptions[i].classList.add('white')
+                  }
+                  localStorage.setItem('motherWasChecked', true)
+                  appointer()
+                }
+              } else {
+                document
+                .getElementById("imgThatChangesColor")
+                .onclick=() => {
+                  document.body.style.backgroundColor = "white";
+                  document.getElementById("xd").classList.remove('blackGround')
+                  document.body.classList.remove("white");
+                  document.getElementById("list").classList.remove('blackGround')
+                  document.getElementById("rightPanel").classList.remove('blackGround')
+                  document.querySelector("h1").classList.remove('white')
+                  for (let i = 0; i < navOptions.length; i++) {
+                    navOptions[i].classList.remove('white')
+                  }
+                  localStorage.removeItem('motherWasChecked')
+                  appointer()
+                  
+                }
+              }
+            }
+            
+            appointer()
+            </script>
+            
+      </div>
+      <div class="text" id="text">
+        <div class="list" id="list">
+          <ol>
+            <a href="./1.html">
+              <li>КАМЕННОЕ ДОЛБАЁБИЩЕ</li>
+            </a>
+            <a href="./2.html">
+              <li>ГероSkope</li>
+            </a>
+            <a href="./1.html">
+              <li>XD</li>
+            </a>
+            <a href="./1.html">
+              <li>XD</li>
+            </a>
+            <a href="./1.html">
+              <li>XD</li>
+            </a>
+            <a href="./1.html">
+              <li>XD</li>
+            </a>
+            <a href="./1.html">
+              <li>XD</li>
+            </a>
+          </ol>
+        </div>
+        <div class="vid">
+          <video
+            autoplay
+            muted
+            loop
+            src="/images/scream at the stone.mp4"
+          ></video>
+        </div>
+        <div class="test">
+          <script>
+            const fnThatDeletesTest = (id) => {
+              const el = document.getElementById(id);
+              el.remove();
+            };
+          </script>
+
+          <div class="question" id="question">
+            <ul>
+              <li>Что делает</li>
+
+              <li id="stone-dolb">КАМЕННОЕ ДОЛБАЁБИЩЕ?</li>
+            </ul>
+          </div>
+          <div class="answers" id="answers">
+            <ol>
+              <li>
+                <button
+                  id="theButtonThatDeletesItself1"
+                  onclick="fnThatDeletesTest('question'), fnThatDeletesTest('answers'), timer(), makeTimerVisible(), makeConclusionVisible(), fnInSituationOfCorrectAnswer(), fnThatDeletesTest('theButtonThatDeletesItself1'),fnThatDeletesTest('theButtonThatDeletesItself2'),fnThatDeletesTest('theButtonThatDeletesItself3')"
+                >
+                  1.Орёт на камень 6 месяцев
+                </button>
+              </li>
+              <li>
+                <button
+                  id="theButtonThatDeletesItself2"
+                  onclick="fnThatDeletesTest('question'), fnThatDeletesTest('answers'), timer(), makeTimerVisible(), makeConclusionVisible(), fnInSituationOfUncorrectAnswer(), fnThatDeletesTest('theButtonThatDeletesItself1'),fnThatDeletesTest('theButtonThatDeletesItself2'),fnThatDeletesTest('theButtonThatDeletesItself3')"
+                >
+                  2.Слушает камень
+                </button>
+              </li>
+              <li>
+                <button
+                  id="theButtonThatDeletesItself3"
+                  onclick="fnThatDeletesTest('question'), fnThatDeletesTest('answers'), timer(), makeTimerVisible(), makeConclusionVisible(), fnInSituationOfUncorrectAnswer(), fnThatDeletesTest('theButtonThatDeletesItself1'),fnThatDeletesTest('theButtonThatDeletesItself2'),fnThatDeletesTest('theButtonThatDeletesItself3')"
+                >
+                  3.Закрылось в комнате и пытается договориться с камнем на счёт
+                  зерновой сделки
+                </button>
+              </li>
+            </ol>
+          </div>
+          <div class="killer" id="timer">
+            <table>
+              <tr>
+                <th>месяцы</th>
+                <th>дни</th>
+                <th>часы</th>
+                <th>минуты</th>
+                <th>секунды</th>
+              </tr>
+              <tr>
+                <th id="month">6</th>
+                <th id="day">0</th>
+                <th id="hour">0</th>
+                <th id="minute">0</th>
+                <th id="second">0</th>
+              </tr>
+            </table>
+            <script>
+              let seconds = Number(
+                document.querySelector("#second").textContent
+              );
+              let minutes = Number(
+                document.querySelector("#minute").textContent
+              );
+              let hours = Number(document.querySelector("#hour").textContent);
+              let days = Number(document.querySelector("#day").textContent);
+
+              let divWithATimer = document.getElementById("timer");
+              const makeTimerVisible = () => {
+                divWithATimer.classList.remove("killer");
+                divWithATimer.classList.add("timer");
+              };
+
+              let months = Number(document.querySelector("#month").textContent);
+              console.log(months.textContent, days, hours, minutes, seconds);
+              const checkingTimer = () => {
+                if (seconds <= -1) {
+                  (seconds = 59), (minutes += -1);
+                }
+                if (minutes <= -1) {
+                  (minutes = 59), (hours += -1);
+                }
+                if (hours <= -1) {
+                  (hours = 23), (days += -1);
+                }
+                if (days <= -1) {
+                  (days = 29), (months += -1);
+                }
+              };
+
+              const timer = () => {
+                setTimeout(() => {
+                  if (months >= 0) {
+                    document.querySelector("#second").textContent = seconds;
+                    document.querySelector("#minute").textContent = minutes;
+                    document.querySelector("#hour").textContent = hours;
+                    document.querySelector("#day").textContent = days;
+                    document.querySelector("#month").textContent = months;
+                    seconds--;
+                    checkingTimer();
+                    timer();
+                  } else {
+                    clearTimeout(timer);
+                  }
+                }, 1000);
+              };
+            </script>
+          </div>
+          <div class="killer" id="conclusion">
+            <div id="textConclusion">
+              <p></p>
+            </div>
+            <button
+              onclick="FnThatUsesOtherFnForMakingDeskriprionsVisible()"
+              class="fafacaretdown"
+              id="fafacaretdown"
+            >
+              <i class="fa fa-caret-down" id="faFa"></i>
+            </button>
+          </div>
+          <div class="killer" id="contentUnderFaFa">
+            <div>
+              <p id="correctAnswer">
+                1.Каменное долбаёбище действительно орёт на камень 6 месяцев
+              </p>
+              <p>2.Камень не долбаёб рассказывать свои секреты</p>
+              <p>3.Камню похуй на зерновую сделку</p>
+            </div>
+          </div>
+          <script>
+            const contentUnderCaretDown =
+              document.getElementById("contentUnderFaFa");
+
+            const FnThatMakesContentUnderCaretVisible = () => {
+              document.getElementById("faFa").className = "fa fa-caret-up";
+              contentUnderCaretDown.classList.remove("killer");
+              contentUnderCaretDown.classList.add("contentUnderFaFa");
+            };
+            const FnThatMakesContentUnderCaretInvisible = () => {
+              document.getElementById("faFa").className = "fa fa-caret-down";
+              contentUnderCaretDown.classList.remove("contentUnderFaFa");
+              contentUnderCaretDown.classList.add("killer");
+            };
+
+            let currentOnClickFnForDescriptions =
+              FnThatMakesContentUnderCaretVisible;
+            const FnThatUsesOtherFnForMakingDeskriprionsVisible = () => {
+              currentOnClickFnForDescriptions();
+              if (
+                currentOnClickFnForDescriptions ===
+                FnThatMakesContentUnderCaretVisible
+              ) {
+                currentOnClickFnForDescriptions =
+                  FnThatMakesContentUnderCaretInvisible;
+              } else {
+                currentOnClickFnForDescriptions =
+                  FnThatMakesContentUnderCaretVisible;
+              }
+            };
+          </script>
+          <script>
+            let textWithAConclusion = document.getElementById("conclusion");
+            let textOfConclusion = document.getElementById("textConclusion");
+            const makeConclusionVisible = () => {
+              textWithAConclusion.classList.remove("killer");
+              textWithAConclusion.classList.add("conclusion");
+            };
+
+            const fnInSituationOfCorrectAnswer = () => {
+              textOfConclusion.textContent = "Правильно!";
+              textOfConclusion.classList.add("green");
+            };
+
+            const fnInSituationOfUncorrectAnswer = () => {
+              textOfConclusion.textContent =
+                "Неправильно! Ну ты и ДОЛБАЁБабочка";
+              textOfConclusion.classList.add("red");
+            };
+          </script>
+        </div>
+      </div>
+    </div>
+    <script>
+      if (localStorage.getItem('motherWasChecked')) {
+              document.body.style.backgroundColor = "rgb(218, 221, 221)";
+              document.getElementById("xd").classList.add('blackGround')
+              document.body.classList.add("white");
+              document.getElementById("list").classList.add('blackGround')
+              document.getElementById("rightPanel").classList.add('blackGround')
+              document.querySelector("h1").classList.add('white')
+              for (let i = 0; i < navOptions.length; i++) {
+                navOptions[i].classList.add('white')
+              }
+            
+        } else {
+              document.body.style.backgroundColor = "white";
+              document.getElementById("xd").classList.remove('blackGround')
+              document.body.classList.remove("white");
+              document.getElementById("list").classList.remove('blackGround')
+              document.getElementById("rightPanel").classList.remove('blackGround')
+              document.querySelector("h1").classList.remove('white')
+              for (let i = 0; i < navOptions.length; i++) {
+                navOptions[i].classList.remove('white')
+              }
+        }
+    </script>
+  </body>
+</html>
